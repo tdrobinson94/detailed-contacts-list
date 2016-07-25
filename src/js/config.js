@@ -17,7 +17,8 @@ function config($stateProvider, $urlRouterProvider){
 
     .state('root.add', {
       url: '/add',
-      templateUrl: 'templates/add.tpl.hmtl'
+      templateUrl: 'templates/add.tpl.hmtl',
+      controller: 'AddController as vm'
     })
 
   $urlRouterProvider.otherwise('/');

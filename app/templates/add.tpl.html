@@ -1,0 +1,17 @@
+<h2 class="title">Add Contact</h2>
+
+
+<form class="contact-form" ng-submit="vm.addContact(contact)">
+    <p>
+      <input name="name" type="text" class="input name"  placeholder="Name" ng-model="contact.name" />
+    </p>
+    <p>
+      <input name="email" type="email" class="input email" placeholder="Email" ng-model="contact.email" />
+    </p>
+    <p>
+      <input name="number" type="text" class="input number" placeholder="Cell Number" ng-model="contact.number" />
+    </p>
+    <p>
+      <input name="location" type="text" class="input location" placeholder="Location" ng-model="contact.location" />
+    </p>
+</form>

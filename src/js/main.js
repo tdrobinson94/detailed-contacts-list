@@ -6,6 +6,9 @@ import {config} from './config';
 import { serverConstant } from './constant';
 
 
+import { ContactService } from './services/contact.service';
+
+
 import { AddController } from './controllers/add.controller';
 
 
@@ -15,4 +18,5 @@ angular
   .config(config)
   .controller('AddController', AddController)
   .constant('SERVER', serverConstant)
+  .service('ContactService', ContactService)
 ;

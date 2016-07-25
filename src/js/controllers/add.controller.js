@@ -1,14 +1,16 @@
-function AddController() {
+function AddController($http, SERVER) {
 
   let vm = this;
 
   vm.addContact = addContact;
 
   function addContact(contact){
-    console.log(contact);
+    $http.post(SERVER.URL, contact).then(function(res){
+      console.log(res);
+    });
   };
 
 };
 
-AddController.$inject = [];
+AddController.$inject = ['$http', 'SERVER'];
 export { AddController };

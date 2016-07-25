@@ -1,0 +1,22 @@
+<h2 class="title">All Contacts</h2>
+
+
+<div class="contact-container" ng-repeat="contact in vm.contacts">
+  <div class="contact-image">
+    <img src="{{ contact.url }}" alt="{{ contact.name }}" />
+  </div>
+  <div class="contact-info">
+    <p class="contact-name">
+      {{ contact.name }}
+    </p>
+    <p class="contact-email">
+      {{ contact.email }}
+    </p>
+    <p class="contact-number">
+      {{ contact.number }}
+    </p>
+    <p class="contact-location">
+      {{ contact.location }}
+    </p>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { ContactService } from './services/contact.service';
 
 
 import { AddController } from './controllers/add.controller';
+import { HomeController } from './controllers/home.controller';
 
 
 
@@ -19,4 +20,5 @@ angular
   .controller('AddController', AddController)
   .constant('SERVER', serverConstant)
   .service('ContactService', ContactService)
+  .controller('HomeController', HomeController)
 ;

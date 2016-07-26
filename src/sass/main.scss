@@ -14,10 +14,15 @@ html{
       margin: 10px;
       text-decoration: none;
       color: white;
+      transition: color .2s ease-in-out;
       .title{
         margin: 10px;
         color: white;
       }
+    }
+    .pages:hover{
+      color: #00B0FF;
+      transition: color .2s ease-in-out;
     }
   }
   .all-contacts{
@@ -27,6 +32,7 @@ html{
       width: 100%;
       text-decoration: none;
       color: black;
+      transition: color .2s ease-in-out;
       .contact-container{
         display: flex;
         align-items: center;
@@ -45,6 +51,11 @@ html{
           align-items: center;
           .contact-name{
             font-size: 20px;
+            transition: color .2s ease-in-out;
+          }
+          .contact-name:hover{
+            color: #00E676;
+            transition: color .2s ease-in-out;
           }
         }
       }
@@ -71,6 +82,47 @@ html{
         background-color: #455A64;
         border: 1px solid #455A64;
         color: white;
+      }
+    }
+  }
+  .contact-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00E676;
+    position: relative;
+    .back{
+      text-decoration: none;
+      font-size: 20px;
+      margin: 20px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      color: white;
+      transition: color .2s ease-in-out;
+    }
+    .back:hover{
+      color: #00B0FF;
+      transition: color .2s ease-in-out;
+    }
+    img{
+      margin: 40px;
+      width: 50%;
+      height: 50%;
+      border-radius: 100%;
+    }
+    .single-contact-info{
+      .single-contact-name{
+
+      }
+      .single-contact-email{
+
+      }
+      .single-contact-number{
+
+      }
+      .single-contact-location{
+
       }
     }
   }

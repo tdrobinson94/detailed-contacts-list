@@ -1,7 +1,8 @@
-function HomeController(){
+function HomeController(ContactService){
 
   let vm = this;
 
+  init();
 
   function init(){
     ContactService.readContacts().then(function(res){

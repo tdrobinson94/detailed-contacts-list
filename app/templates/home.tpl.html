@@ -1,22 +1,15 @@
-<h2 class="title">All Contacts</h2>
+<div class="title-background">
+  <a class="pages" href="/#/"><h2 class="title">All Contacts</h2></a>
+  <a class="pages" href="/#/add">Add</a>
+</div>
 
-
-<div class="contact-container" ng-repeat="contact in vm.contacts">
-  <div class="contact-image">
-    <img src="{{ contact.url }}" alt="{{ contact.name }}" />
-  </div>
-  <div class="contact-info">
-    <p class="contact-name">
-      {{ contact.name }}
-    </p>
-    <p class="contact-email">
-      {{ contact.email }}
-    </p>
-    <p class="contact-number">
-      {{ contact.number }}
-    </p>
-    <p class="contact-location">
-      {{ contact.location }}
-    </p>
+<div class="all-contacts">
+  <div class="contact-container" ng-repeat="contact in vm.contacts">
+    <img src="./images/default-contact.png" alt="{{ contact.name }}" />
+    <div class="contact-info">
+      <p class="contact-name">
+        {{ contact.name }}
+      </p>
+    </div>
   </div>
 </div>

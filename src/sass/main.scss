@@ -1,0 +1,72 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  .title-background{
+    background-color: #00E676;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .pages{
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      .title{
+        margin: 10px;
+        color: white;
+      }
+    }
+  }
+  .all-contacts{
+    display: flex;
+    flex-wrap: wrap;
+    .contact-container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      border-bottom: 1px solid lightgray;
+      img{
+        border-radius: 100%;
+        width: 15%;
+        height: 15%;
+        margin: 10px;
+      }
+      .contact-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contact-name{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .contact-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    p{
+      width: 100%;
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      .input{
+        width: 80%;
+        height: 20px;
+        padding: 5px;
+      }
+      .enter{
+        padding: 10px 15px;
+        background-color: #455A64;
+        border: 1px solid #455A64;
+        color: white;
+      }
+    }
+  }
+}

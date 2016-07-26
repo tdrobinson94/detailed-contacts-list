@@ -1,4 +1,7 @@
-<h2 class="title">Add Contact</h2>
+<div class="title-background">
+  <a class="pages" href="/#/add"><h2 class="title">Add Contacts</h2></a>
+  <a class="pages" href="/#/">Home</a>
+</div>
 
 
 <form class="contact-form" ng-submit="vm.addContact(contact)">
@@ -13,5 +16,8 @@
     </p>
     <p>
       <input name="location" type="text" class="input location" placeholder="Location" ng-model="contact.location" />
+    </p>
+    <p>
+      <button class="enter">Add Contact</button>
     </p>
 </form>

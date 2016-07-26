@@ -5,7 +5,7 @@ function AddController(ContactService, $state) {
   vm.addContact = addContact;
 
   function addContact(contact){
-    ContactService(contact).then(function(res){
+    ContactService.createContact(contact).then(function(res){
       $state.go('root.home');
     });
   };

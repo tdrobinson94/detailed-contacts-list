@@ -1,4 +1,4 @@
-function ContactService(){
+function ContactService($http, SERVER){
 
   this.createContact = createContact;
   this.deleteContact = deleteContact;
